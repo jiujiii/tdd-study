@@ -1,0 +1,11 @@
+language: java
+jdk:
+  - oraclejdk8
+dist: trusty
+addons:
+  sonarcloud:
+    organization: "jiujiii-github" # 这里为之前在 sonar 项目中的 organization key
+    token:
+      secure: "6c10f92f02c4f4ec12ad7b04da8823e73f2431fc" # 这里的数据为在 sonar 里建立的 token
+script:
+  - sonar-scanner
