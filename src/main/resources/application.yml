@@ -1,0 +1,15 @@
+server:
+  port: 8079
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:~/test
+    username: sa
+    password: sa
+    schema: classpath*:tables_data.sql
+    initialization-mode: embedded
+
+logging:
+  level:
+    root: debug
