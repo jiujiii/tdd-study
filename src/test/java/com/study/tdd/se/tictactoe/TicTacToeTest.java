@@ -3,8 +3,6 @@ package com.study.tdd.se.tictactoe;
 import org.junit.*;
 import org.junit.rules.ExpectedException;
 
-import static org.junit.Assert.*;
-
 public class TicTacToeTest {
 
     private TicTacToe ticTacToe;
