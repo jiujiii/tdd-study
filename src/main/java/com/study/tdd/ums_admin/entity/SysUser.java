@@ -1,6 +1,5 @@
-package com.study.tdd.user.entity;
+package com.study.tdd.ums_admin.entity;
 
-import com.study.tdd.base.BaseDto;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -12,34 +11,31 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.time.LocalDateTime;
 
-@Entity
+@ToString
 @Setter
 @Getter
-@ToString
 @Accessors(chain = true)
-@Table(name = "UMS_ADMIN")
-public class UmsAdmin extends BaseDto {
+@Entity
+@Table(name = "SYS_USER")
+public class SysUser {
 
     @Id
     @GeneratedValue
-    private Long id;
+    private Long userId;
 
     private String userName;
 
-    private String password;
-
-    private String icon;
+    private String passwordEncrypted;
 
     private String email;
 
-    private String nickName;
+    private String phone;
 
-    private String note;
+    private LocalDateTime startActiveDate;
 
-    private LocalDateTime createTime;
+    private LocalDateTime endActiveDate;
 
-    private LocalDateTime loginTime;
+    private String status;
 
-    private Long status;
-
+    private String description;
 }

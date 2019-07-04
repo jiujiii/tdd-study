@@ -1,11 +1,8 @@
-package com.study.tdd.user.service.impl;
+package com.study.tdd.ums_admin.service.impl;
 
-import com.study.tdd.user.entity.UmsAdmin;
-import com.study.tdd.user.repository.UmsAdminRepository;
-import com.study.tdd.user.service.IUserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
+import com.study.tdd.ums_admin.entity.UmsAdmin;
+import com.study.tdd.ums_admin.repository.UmsAdminRepository;
+import com.study.tdd.ums_admin.service.IUserService;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

@@ -1,6 +1,6 @@
-package com.study.tdd.user.service;
+package com.study.tdd.ums_admin.service;
 
-import com.study.tdd.user.entity.UmsAdmin;
+import com.study.tdd.ums_admin.entity.UmsAdmin;
 
 import java.util.Optional;
 
