@@ -1,0 +1,13 @@
+server:
+  port: 8079
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    initialization-mode: embedded
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: h2
+    show-sql: true
+    open-in-view: false

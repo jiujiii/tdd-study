@@ -8,7 +8,7 @@ import lombok.experimental.Accessors;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Entity
@@ -16,8 +16,7 @@ import java.time.LocalDateTime;
 @Getter
 @ToString
 @Accessors(chain = true)
-@Table(name = "UMS_ADMIN")
-public class UmsAdmin {
+public class UmsAdmin implements Serializable {
 
     @Id
     @GeneratedValue

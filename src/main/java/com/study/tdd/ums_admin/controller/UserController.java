@@ -4,6 +4,7 @@ import com.study.tdd.ums_admin.entity.UmsAdmin;
 import com.study.tdd.ums_admin.service.IUserService;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
@@ -18,7 +19,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    @RequestMapping("/{id}")
+    @RequestMapping(value = "/{id}",method= RequestMethod.GET)
     public String getOneById(@PathVariable("id") Long id){
         Optional<UmsAdmin> umsAdmin = userService.selectOne(id);
         return umsAdmin.isPresent()?umsAdmin.toString():"";
