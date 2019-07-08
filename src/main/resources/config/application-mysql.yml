@@ -7,6 +7,5 @@ spring:
     url: jdbc:mysql://localhost/tdd?useSSL=true&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT
     username: root
     password: bd3cf1rzh.
-    schema: classpath*:db/schema.sql
+    schema: classpath*:db/schema-mysql.sql
     data: classpath*:db/data.sql
-    initialization-mode: always
