@@ -26,6 +26,11 @@ public class Author {
     private Long id;
 
     /**
+     * 姓名
+     */
+    private String name;
+
+    /**
      * 地址
      */
     private String address;

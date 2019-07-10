@@ -1,5 +1,7 @@
 server:
   port: 8079
+  servlet:
+    context-path: /
 
 spring:
   datasource:
@@ -9,3 +11,7 @@ spring:
     password: bd3cf1rzh.
     schema: classpath*:db/schema-mysql.sql
     data: classpath*:db/data.sql
+    initialization-mode: always
+
+  jpa:
+    show-sql: true

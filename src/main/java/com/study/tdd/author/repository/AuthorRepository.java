@@ -1,4 +1,7 @@
 package com.study.tdd.author.repository;
 
-public class AuthorRepository {
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface AuthorRepository {
 }
