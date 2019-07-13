@@ -5,13 +5,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost/tdd?useSSL=true&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT
-    schema: classpath*:db/schema.sql
-    data: classpath*:db/data.sql
     username: root
     password: bd3cf1rzh.
+    schema: classpath*:db/schema.sql
+    data: classpath*:db/data.sql
     initialization-mode: always
-
-  jpa:
-    generate-ddl: true
-    database: MYSQL
-    show-sql: true
